@@ -1,0 +1,113 @@
+.hero {
+  background-color: rgba(232, 236, 237, 0.9);
+  background-image: url("../img/oversmiling.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right -220px;
+  background-position: -100px 0px 100px;
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  top: -120px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  @include reset-list;
+}
+
+.carousel__item {
+  padding: 20% 0 50% 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel__content {
+  max-width: 543px;
+  margin-right: auto;
+}
+
+.section__heading {
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.section__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.hero-btns {
+  display: flex;
+  position: absolute;
+  top: 75%;
+}
+
+.hero-btns button {
+  background-color: transparent;
+  border: none;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+@include breakpoint-down (1024px) {
+  .sitenav {
+    top: 0;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+}
+
+@include breakpoint-down (890px) {
+
+.carousel__content {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  max-width: 100%;
+  margin-left: 10%;
+  padding: 25px 0 0 0;
+  margin-right: 10%;
+}
+
+.carousel__content a {
+  display: none;
+}
+
+.section__heading {
+  font-size: 30px;
+line-height: 35px;
+padding: 20px;
+}
+}
+
+@include breakpoint-down (600px) { 
+  .carousel__content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0 0 0;
+  }
+
+  .section__text {
+  padding: 20px;
+  margin-bottom: 0;
+  }
+
+  .section__heading { 
+    font-size: 25px;
+line-height: 30px;
+padding-top: 0;
+  }
+}
+

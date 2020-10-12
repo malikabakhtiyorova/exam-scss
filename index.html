@@ -80,6 +80,88 @@
     </div>
   </header>
 
+  <section class="hero section">
+    <div class="container">
+      <h1 class="visually-hidden">Carousel hero section </h1>
+      <div class="section__wrapper">
+        <div class="hero-btns">
+          <button class="prev">
+            <img width="42px" height="70px" src="img/btn-prev.png" alt="prev">
+          </button>
+          <button class="next">
+            <img width="70px" height="70px" src="img/btn-next.png" alt="next">
+          </button>
+        </div>
+        <ol class="carousel">
+          <li class="carousel__item">
+            <div class="carousel__content">
+              <p class="section__text">Modern technology and expert-class dentists</p>
+              <h1 class="section__heading">Get a brilliant smile for every day</h1>
+              <a class="btn--primary" href="https://google.com" target="_blank">Get</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="feautures">
+    <div class="container">
+      <ul class="feautures-list">
+        <li class="feautures__item feauture">
+          <h4 class="feauture__heading">Treatment</h4>
+          <p class="feauture__text">All types of dental treatment are carried out using the most modern technologies.
+          </p>
+        </li>
+        <li class="feautures__item feauture feauture--light">
+          <h4 class="feauture__heading">Prosthetics</h4>
+          <p class="feauture__text">We will help you find the most convenient and aesthetically attractive version of
+            the prosthesis.</p>
+        </li>
+      </ul>
+      <form method="GET" class="main-form" action="https://echo.htmlacademy.ru">
+        <h3 class="section__subheading">Appointment</h3>
+        <input required type="text" name="name" placeholder="Name">
+        <input required type="text" name="phone" placeholder="Phone">
+        <input class="btn--primary btn--secondary" type="submit" value="Appointment">
+
+        <label class="checkbox">
+          I give my consent to the storage
+          and processing of personal data
+          <span class="checkbox__input">
+            <input type="checkbox" name="checkbox">
+            <span class="checkbox__control">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden="true" focusable="false">
+                <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
+            </span>
+          </span>
+          <!-- <span class="radio__label">I give my consent to the storage
+            and processing of personal data</span> -->
+        </label>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="services section">
+    <div class="container">
+      <div class="section__content">
+        <h3 class="section__subheading">
+          Services
+        </h3>
+        <p class="section__text">We provide a wide range of services from treatment to prosthetics.
+          Therefore, you do not need to go anywhere else.</p>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider-btns">
+          <button type="button">
+            <img src="" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script>
     var elSiteHeader = document.querySelector('.sitenav-list__wrapper');
     var elSiteHeaderToggler = document.querySelector('.nav-responsive__toggler');

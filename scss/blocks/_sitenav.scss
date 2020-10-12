@@ -129,6 +129,7 @@
   .nav-responsive {
     flex-shrink: 0;
     }
+
 }
 
 @include breakpoint-down (894px) { 
@@ -179,8 +180,6 @@
     margin-right: 0;
   }
 
- 
-
   .sitenav-list__open .sitenav__link {
     padding: 15px 0;
     width: 100%;
@@ -200,7 +199,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    padding: 15px 0;
+    padding: 30px 0 15px 0;
   }
 
   .hamburger-open {

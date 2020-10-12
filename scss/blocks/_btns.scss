@@ -1,18 +1,32 @@
 .btn--primary {
-  border: 2px solid #fff;
+  border: none;
   display: inline-block;
   vertical-align: baseline;
   color: #fff;
-  background-color: transparent;
-  font-weight: 600;
+  background-color: #0055B8;
   font-size: 18px;
-  line-height: 28px;
-  padding: 10px 30px;
-  max-width: 155px;
-  border-radius: 24px;
+  line-height: 21px;
+  padding: 20px 115px;
+  max-width: 260px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  text-transform: uppercase;
   text-align: center;
   transition: all 0.3s ease;
   white-space: nowrap;
+}
+
+.btn--secondary {
+  color: #0055B8;
+ background-color: #FFD600;
+}
+
+.btn--primary:hover, .hero-btns button:hover {
+  opacity: 0.8;
+}
+
+.hero-btns button:active , .btn--primary:active{
+  opacity: 0.6;
 }
