@@ -1,0 +1,95 @@
+.topheader {
+  display: flex;
+  align-items: center;
+  padding: 13px 0 16px 0;
+}
+
+.topheader__contact,  .topheader__scedule {
+  width: 198px;
+}
+
+.topheader__contact {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.topheader__contact:hover {
+  opacity: 0.8;
+}
+
+.topheader__contact:active {
+  opacity: 0.6;
+}
+
+.topheader__contact::before,  .topheader__scedule::before{
+  content: "";
+  display: block;
+  width: 29px;
+  height: 29px;
+  margin-right: 8px;
+  background-size: cover;
+}
+
+.topheader__contact::before {
+  background-image: url("../img/phone.png");
+}
+
+.topheader__scedule {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.topheader__scedule::before {
+  background-image: url("../img/clock.png");
+}
+
+.topheader__heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  text-decoration: none;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.topheader__scedule .topheader__heading {
+  color: #00B007;
+}
+
+.topheader__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(39, 39, 39, 0.6);
+  display: block;
+  text-decoration: none;
+  margin: 0;
+}
+
+.topheader__logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logo__img {
+  display: block;
+}
+
+@include breakpoint-down (1024px) {
+  .topheader {
+    display: none;
+  }
+
+  .siteheader .container {
+    padding: 0;
+  }
+}
+
+

@@ -13,67 +13,82 @@
   <header class="siteheader">
     <div class="container">
       <div class="topheader">
-        <div class="topheader__contact">
-          <p class="topheader__heading">Contacts us</p>
-          <a class="topheader__text number" href="tel:+7(342)216-22-27">+7(342)216-22-27</a>
-        </div>
+        <a href="tel:+7(342)216-22-27" class="topheader__contact">
+          <span class="contacts-wrapper">
+            <p class="topheader__heading">Contact us</p>
+            <p class="topheader__text">+7(342)216-22-27</p>
+          </span>
+        </a>
         <a href="index.html" class="topheader__logo logo">
           <img src="img/dp-logo.png" width="103" height="56" alt="logo" class="logo__img"
             srcset="img/dp-logo.png 1x, img/dp-logo@2x.png 2x">
         </a>
         <div class="topheader__scedule">
-          <a class="topheader__heading">Open now</a>
-          <p class="topheader__text">Today we work until 19.00</p>
+          <div class="scedule-wrapper">
+            <a href="https://google.com" target="_blank" class="topheader__heading">Open now</a>
+            <p class="topheader__text">Today we work until 19.00</p>
+          </div>
         </div>
       </div>
       <nav class="sitenav">
         <div class="nav-responsive">
           <a href="index.html" class="nav-responsive__logo">
-            <img src="img/nav-logo.png" width="103" height="56" alt="navigation logo" class="nav-responsive__img"
+            <img src="img/nav-logo.png" width="140" height="21" alt="navigation logo" class="nav-responsive__img"
               srcset="img/nav-logo.png 1x, img/nav-logo@2x.png 2x">
           </a>
           <button class="nav-responsive__toggler" type="button">
-            <img class="nav-responsive__img" src="img/gamburger.svg" width="25" height="18" alt="toggler">
           </button>
         </div>
-        <ul class="sitenav__list">
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#services">Services</a>
-          </li>
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#advantages">Advantages</a>
-          </li>
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#team">Team</a>
-          </li>
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#reviews">Reviews</a>
-          </li>
-          <li class="sitenav__item">
-            <a class="sitenav__link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
+        <div class="sitenav-list__wrapper">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#services">Services</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#advantages">Advantages</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#team">Team</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#reviews">Reviews</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
 
-        <ul class="sitenav__list">
-          <li class="sitenav__social-item">
-            <a class="sitenav__social-link" target="_blank" href="https://vkontakte.ru">
-              <img class="sitenav__social-img" width="28" height="28" src="img/vk.svg" alt="vkontakte">
-            </a>
-          </li>
-          <li class="sitenav__social-item">
-            <a class="sitenav__social-link" target="_blank" href="https://instagram.com">
-              <img class="sitenav__social-img" width="28" height="28" src="img/instagram.svg" alt="instagram">
-            </a>
-          </li>
-          <li class="sitenav__social-item">
-            <a class="sitenav__social-link" target="_blank" href="https://twitter.com">
-              <img class="sitenav__social-img" width="28" height="28" src="img/twitter.svg" alt="twitter">
-            </a>
-          </li>
-        </ul>
+          <ul class="sitenav__list sitenav__social-list">
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" target="_blank" href="https://vkontakte.ru">
+                <img class="sitenav__social-img" width="28" height="28" src="img/vk.svg" alt="vkontakte">
+              </a>
+            </li>
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" target="_blank" href="https://instagram.com">
+                <img class="sitenav__social-img" width="16" height="16" src="img/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" target="_blank" href="https://twitter.com">
+                <img class="sitenav__social-img" width="18" height="18" src="img/twitter.svg" alt="twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
+
+  <script>
+    var elSiteHeader = document.querySelector('.sitenav-list__wrapper');
+    var elSiteHeaderToggler = document.querySelector('.nav-responsive__toggler');
+
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('sitenav-list__open');
+      elSiteHeaderToggler.classList.toggle('hamburger-open');
+    });
+  </script>
 
 </body>
 
