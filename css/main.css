@@ -456,6 +456,12 @@ img {
   white-space: nowrap;
 }
 
+.form-btn__wrapper {
+  background-color: #fff;
+  max-width: 260px;
+  border-radius: 5px;
+}
+
 .btn--secondary {
   color: #0055B8;
   background-color: #FFD600;
@@ -1215,25 +1221,25 @@ img {
   color: var(--disabled);
 }
 
-.feautures input:not(:last-of-type):hover {
+.feautures input:not(:last-child):focus {
   border-color: #0055B8;
   background-color: #fff;
   color: #0055B8;
 }
 
-.feautures input:hover::-webkit-input-placeholder {
+.feautures input:focus::-webkit-input-placeholder {
   color: #0055B8;
 }
 
-.feautures input:hover:-ms-input-placeholder {
+.feautures input:focus:-ms-input-placeholder {
   color: #0055B8;
 }
 
-.feautures input:hover::-ms-input-placeholder {
+.feautures input:focus::-ms-input-placeholder {
   color: #0055B8;
 }
 
-.feautures input:hover::placeholder {
+.feautures input:focus::placeholder {
   color: #0055B8;
 }
 
@@ -1249,6 +1255,11 @@ input.btn--secondary {
   border: none;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  margin-top: 0;
+}
+
+.form-btn__wrapper {
+  margin-top: 15px;
 }
 
 input.btn--secondary:active {

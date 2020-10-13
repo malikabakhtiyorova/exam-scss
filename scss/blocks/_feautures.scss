@@ -150,13 +150,13 @@ color: rgba(255, 255, 255, 0.5);
   }
 }
 
-.feautures input:not(:last-of-type):hover {
+.feautures input:not(:last-child):focus {
   border-color: #0055B8;
   background-color: #fff;
   color: #0055B8;
 }
 
-.feautures input:hover::placeholder {
+.feautures input:focus::placeholder {
   color: #0055B8;
 }
 
@@ -171,6 +171,11 @@ input.btn--secondary {
  text-transform: capitalize;
  border: none;
  transition: opacity 0.3s ease;
+ margin-top: 0;
+}
+
+.form-btn__wrapper {
+  margin-top: 15px;
 }
 
 input.btn--secondary:active {
