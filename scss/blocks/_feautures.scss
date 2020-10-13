@@ -1,7 +1,7 @@
 .feautures {
   margin: 0;
   padding: 0;
-  margin-top: -172px;
+  margin-top: -182px;
   z-index: 200;
 }
 
@@ -179,13 +179,13 @@ input.btn--secondary:active {
 
 @include breakpoint-down (1139px) {
   .feautures {
-    margin-top: -197px;
+    margin-top: -207px;
   }
 }
 
 @include breakpoint-down (1004px) {
   .feautures {
-    margin-top: -216px;
+    margin-top: -215px;
   }
 
 

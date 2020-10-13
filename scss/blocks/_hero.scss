@@ -3,8 +3,8 @@
   background-image: url("../img/oversmiling.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right -220px;
-  background-position: -100px 0px 100px;
+  background-position: top right -150px;
+  // background-position: 0px 0px 100px;
   margin-top: 80px;
   position: relative;
   width: 100%;
@@ -59,10 +59,22 @@
   transition: opacity 0.3s ease;
 }
 
+@include breakpoint-down (1070px) {
+  .hero {
+    background-position: top right -230px;
+  }
+
+}
+
 @include breakpoint-down (1024px) {
   .sitenav {
     top: 0;
   }
+
+  .hero {
+    background-position: top right -200px;
+  }
+
 
   .hero {
     margin-top: 0;
