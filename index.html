@@ -9,15 +9,15 @@
 </head>
 
 <body>
-
+  <h1 class="visually-hidden">Dental Practise</h1>
   <header class="siteheader">
     <div class="container">
       <div class="topheader">
         <a href="tel:+7(342)216-22-27" class="topheader__contact">
-          <span class="contacts-wrapper">
+          <div class="contacts-wrapper">
             <p class="topheader__heading">Contact us</p>
             <p class="topheader__text">+7(342)216-22-27</p>
-          </span>
+          </div>
         </a>
         <a href="index.html" class="topheader__logo logo">
           <img src="img/dp-logo.png" width="103" height="56" alt="logo" class="logo__img"
@@ -36,10 +36,10 @@
             <img src="img/nav-logo.png" width="140" height="21" alt="navigation logo" class="nav-responsive__img"
               srcset="img/nav-logo.png 1x, img/nav-logo@2x.png 2x">
           </a>
-          <button class="nav-responsive__toggler" type="button">
+          <button aria-label="menu-toggle" class="no-js--toggler nav-responsive__toggler" type="button">
           </button>
         </div>
-        <div class="sitenav-list__wrapper">
+        <div class="sitenav-list__wrapper sitenav--nojs">
           <ul class="sitenav__list">
             <li class="sitenav__item">
               <a class="sitenav__link" href="#services">Services</a>
@@ -58,18 +58,18 @@
             </li>
           </ul>
 
-          <ul class="sitenav__list sitenav__social-list">
-            <li class="sitenav__social-item">
+          <ul aria-label="social links" class="sitenav__list sitenav__social-list">
+            <li aria-label="vkontakte" class="sitenav__social-item">
               <a class="sitenav__social-link" target="_blank" href="https://vkontakte.ru">
                 <img class="sitenav__social-img" width="28" height="28" src="img/vk.svg" alt="vkontakte">
               </a>
             </li>
-            <li class="sitenav__social-item">
+            <li aria-label="instagram" class="sitenav__social-item">
               <a class="sitenav__social-link" target="_blank" href="https://instagram.com">
                 <img class="sitenav__social-img" width="16" height="16" src="img/instagram.svg" alt="instagram">
               </a>
             </li>
-            <li class="sitenav__social-item">
+            <li aria-label="twitter" class="sitenav__social-item">
               <a class="sitenav__social-link" target="_blank" href="https://twitter.com">
                 <img class="sitenav__social-img" width="18" height="18" src="img/twitter.svg" alt="twitter">
               </a>
@@ -82,21 +82,21 @@
 
   <section class="hero section">
     <div class="container">
-      <h1 class="visually-hidden">Carousel hero section </h1>
+      <h2 class="visually-hidden">Carousel hero section </h2>
       <div class="section__wrapper">
         <div class="hero-btns">
-          <button class="prev">
-            <img width="42px" height="70px" src="img/btn-prev.png" alt="prev">
+          <button aria-label="prev" class="prev">
+            <img width="13" height="10" src="img/prv.png" srcset="img/prv.png 1x, img/prv@2x.png 2x" alt="prev">
           </button>
-          <button class="next">
-            <img width="70px" height="70px" src="img/btn-next.png" alt="next">
+          <button aria-label="next" class="next">
+            <img width="25" height="13" src="img/nxt.png" srcset="img/nxt.png 1x, img/nxt@2x.png 2x" alt="next">
           </button>
         </div>
         <ol class="carousel">
           <li class="carousel__item">
             <div class="carousel__content">
               <p class="section__text">Modern technology and expert-class dentists</p>
-              <h1 class="section__heading">Get a brilliant smile for every day</h1>
+              <h2 class="section__heading">Get a brilliant smile for every day</h2>
               <a class="btn--primary" href="https://google.com" target="_blank">Get</a>
             </div>
           </li>
@@ -121,8 +121,8 @@
       </ul>
       <form method="GET" class="main-form" action="https://echo.htmlacademy.ru">
         <h3 class="section__subheading">Appointment</h3>
-        <input required type="text" name="name" placeholder="Name">
-        <input required type="text" name="phone" placeholder="Phone">
+        <input aria-label="enter name" required type="text" name="name" placeholder="Name">
+        <input aria-label="enter phone number" required type="text" name="phone" placeholder="Phone">
         <input class="btn--primary btn--secondary" type="submit" value="Appointment">
 
         <label class="checkbox">
@@ -135,15 +135,13 @@
                 <path fill='none' stroke='currentColor' stroke-width='3' d='M1.73 12.91l6.37 6.37L22.79 4.59' /></svg>
             </span>
           </span>
-          <!-- <span class="radio__label">I give my consent to the storage
-            and processing of personal data</span> -->
         </label>
 
       </form>
     </div>
   </section>
 
-  <section class="services section">
+  <section id="services" class="services section">
     <div class="container">
       <div class="section__content">
         <h3 class="section__subheading">
@@ -154,13 +152,13 @@
       </div>
       <div class="slider-wrapper">
 
-        <button class="slider-next" type="button">
-          <img src="img/arrow-next.png" width="15" height="15" srcset="img/arrow-next.png 1x, img/arrow-next@2x.png 2x"
-            alt="next">
+        <button aria-label="next" class="slider-next" type="button">
+          <img src="img/next-service.png" width="15" height="15"
+            srcset="img/next-service.png 1x, img/next-service@2x.png 2x" alt="next">
         </button>
-        <button class="slider-prev" type="button">
-          <img src="img/arrow-prev.png" width="15" height="15" srcset="img/arrow-prev.png 1x, img/arrow-prev@2x.png 2x"
-            alt="next">
+        <button aria-label="prev" class="slider-prev" type="button">
+          <img src="img/prev-service.png" width="15" height="15"
+            srcset="img/prev-service.png 1x, img/prev-service@2x.png 2x" alt="next">
         </button>
 
         <ol class="slider-list">
@@ -173,24 +171,22 @@
             </div>
           </li>
           <li>
-            <h4 class="section__sub-heading">Dental
-              treatment</h4>
+            <h4 class="section__sub-heading">Hygiene</h4>
             <div class="prices">
-              <s>5000₽</s>
-              <p>3100₽</p>
+              <s>6000₽</s>
+              <p>4600₽</p>
             </div>
           </li>
           <li>
-            <h4 class="section__sub-heading">Dental
-              treatment</h4>
+            <h4 class="section__sub-heading">Diagnostics</h4>
             <div class="prices">
-              <s>5000₽</s>
-              <p>3100₽</p>
+              <s>1000₽</s>
+              <p>FREE</p>
             </div>
           </li>
           <li>
-            <h4 class="section__sub-heading">Dental
-              treatment</h4>
+            <h4 class="section__sub-heading">Children’s
+              dentistry</h4>
             <div class="prices">
               <s>5000₽</s>
               <p>3100₽</p>
@@ -209,7 +205,7 @@
     </div>
   </section>
 
-  <section class="section child-section">
+  <section id="advantages" class="section child-section">
     <div class="container--wide">
 
       <picture>
@@ -263,7 +259,7 @@
     </div>
   </section>
 
-  <section class="services section">
+  <section id="team" class="services section">
     <div class="container">
       <div class="section__content">
         <h3 class="section__subheading">
@@ -275,37 +271,35 @@
       </div>
       <div class="slider-wrapper">
 
-        <button class="slider-next" type="button">
-          <img src="img/arrow-next.png" width="15" height="15" srcset="img/arrow-next.png 1x, img/arrow-next@2x.png 2x"
-            alt="next">
+        <button aria-label="next" class="slider-next" type="button">
+          <img src="img/next-service.png" width="15" height="15"
+            srcset="img/next-service.png 1x, img/next-service@2x.png 2x" alt="next">
         </button>
-        <button class="slider-prev" type="button">
-          <img src="img/arrow-prev.png" width="15" height="15" srcset="img/arrow-prev.png 1x, img/arrow-prev@2x.png 2x"
-            alt="next">
+        <button aria-label="prev" class="slider-prev" type="button">
+          <img src="img/prev-service.png" width="15" height="15"
+            srcset="img/prev-service.png 1x, img/prev-service@2x.png 2x" alt="next">
         </button>
 
         <ol class="team-list">
           <li>
-            <img src="img/anna.png" width="300px" height="350px" srcset="img/anna.png 1x, img/anna@2x.png 2x"
-              alt="avatar">
+            <img src="img/anna.png" width="300" height="350" srcset="img/anna.png 1x, img/anna@2x.png 2x" alt="avatar">
             <div class="team-info">
               <p>Anna Petrova</p>
               <p>Expert-class dentist</p>
             </div>
           </li>
           <li>
-            <img src="img/ivan.png" width="300px" height="350px" srcset="img/ivan.png 1x, img/ivan@2x.png 2x"
-              alt="avatar">
+            <img src="img/ivan.png" width="300" height="350" srcset="img/ivan.png 1x, img/ivan@2x.png 2x" alt="avatar">
             <div class="team-info">
               <p>Ivan Ivanov</p>
               <p>Expert-class dentist</p>
             </div>
           </li>
           <li>
-            <img src="img/larisa.png" width="300px" height="350px" srcset="img/larisa.png 1x, img/larisa@2x.png 2x"
+            <img src="img/larisa.png" width="300" height="350" srcset="img/larisa.png 1x, img/larisa@2x.png 2x"
               alt="avatar">
             <div class="team-info">
-              <p> Vasileva</p>
+              <p>Larisa Vasileva</p>
               <p>Expert-class dentist</p>
             </div>
           </li>
@@ -342,11 +336,11 @@
     </div>
   </section>
 
-  <section class="services patients section">
+  <section id="reviews" class="services patients section">
     <div class="container">
       <div class="section__content">
         <h3 class="section__subheading">
-          Convenient location and working hours
+          Reviews from our patients
         </h3>
         <p class="section__text">Here are the latest reviews from our regular customers.
           You can also leave your review by clicking on the link below</p>
@@ -355,7 +349,7 @@
 
         <ol class="team-list">
           <li>
-            <img src="img/ivanov.png" width="354px" height="240px" srcset="img/ivanov.png 1x, img/ivanov@2x.png 2x"
+            <img src="img/ivanov.png" width="354" height="240" srcset="img/ivanov.png 1x, img/ivanov@2x.png 2x"
               alt="avatar">
             <div class="team-info">
               <p>Anna Petrova</p>
@@ -364,7 +358,7 @@
             </div>
           </li>
           <li>
-            <img src="img/petrov.png" width="354px" height="240px" srcset="img/petrov.png 1x, img/petrov@2x.png 2x"
+            <img src="img/petrov.png" width="354" height="240" srcset="img/petrov.png 1x, img/petrov@2x.png 2x"
               alt="avatar">
             <div class="team-info">
               <p>Ivan Ivanov</p>
@@ -373,7 +367,7 @@
             </div>
           </li>
           <li>
-            <img src="img/petrov.png" width="354px" height="240px" srcset="img/petrov.png 1x, img/petrov@2x.png 2x"
+            <img src="img/petrov.png" width="354" height="240" srcset="img/petrov.png 1x, img/petrov@2x.png 2x"
               alt="avatar">
             <div class="team-info">
               <p> Vasileva</p>
@@ -387,7 +381,7 @@
     </div>
   </section>
 
-  <section class="services map section">
+  <section id="contacts" class="services map section">
     <div class="container--wide">
       <form method="GET" class="main-form" action="https://echo.htmlacademy.ru">
         <h3 class="section__subheading">Appointment</h3>
@@ -419,7 +413,7 @@
           foot.</p>
       </div>
       <a class="location" href="https://goo.gl/maps/9YCjAuNQajv2sorC9">
-        <img src="img/map.png" srcset="img/map.png 1x, img/map@2x.png x" alt="map">
+        <img src="img/map.png" srcset="img/map.png 1x, img/map@2x.png 2x" alt="map">
       </a>
     </div>
   </section>
@@ -428,6 +422,10 @@
   <script>
     var elSiteHeader = document.querySelector('.sitenav-list__wrapper');
     var elSiteHeaderToggler = document.querySelector('.nav-responsive__toggler');
+
+    elSiteHeader.classList.remove('sitenav--nojs');
+
+    elSiteHeaderToggler.classList.remove('no-js--toggler');
 
     elSiteHeaderToggler.addEventListener('click', function () {
       elSiteHeader.classList.toggle('sitenav-list__open');

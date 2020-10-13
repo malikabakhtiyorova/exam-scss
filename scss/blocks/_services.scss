@@ -91,7 +91,7 @@ border-radius: 5px;
 }
 
 .slider-wrapper button {
-  padding: 5px;
+  padding: 5px 10px;
   position: absolute;
   z-index: 50;
   top: 50%;
@@ -113,10 +113,20 @@ border-radius: 5px;
   left: 0;
 }
 
+.services .slider-list li:nth-child(2) .section__sub-heading {
+  margin-bottom: 27px;
+}
 
-.section__sub-heading {
+.services .slider-list li:nth-child(3) .section__sub-heading {
+  margin-bottom: 27px;
+}
+
+
+.services .section__sub-heading {
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin-bottom: 10px;
 }
 
 .prices::before {

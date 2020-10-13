@@ -20,10 +20,15 @@
 
 .btn--secondary {
   color: #0055B8;
- background-color: #FFD600;
+  background-color: #FFD600;
 }
 
-.btn--primary:hover, .hero-btns button:hover {
+.hero-btns button:hover {
+  opacity: 0.6;
+}
+
+
+.btn--primary:hover {
   opacity: 0.8;
 }
 
@@ -36,6 +41,7 @@
   border: 1px solid #0055B8;
   color: #0055B8;
   text-align: center;
+  text-transform: none;
   padding: 20px 70px;
   max-width: 260px;
   margin-left: auto;

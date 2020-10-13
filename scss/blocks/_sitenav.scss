@@ -206,6 +206,31 @@
     background-image: url("../img/gamburger-close.svg");
     background-size: 70%;
   }
+
+  .sitenav--nojs {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    left: 22%;
+    margin-bottom: 5px;
+  }
+
+  .sitenav--nojs .sitenav__list {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .no-js--toggler {
+    display: none;
+  }
+
+  .sitenav--nojs .social__list {
+    padding: 0;
+  }
 }
 
 

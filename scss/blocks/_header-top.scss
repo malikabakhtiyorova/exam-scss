@@ -47,18 +47,8 @@
   background-image: url("../img/clock.png");
 }
 
-.topheader__heading {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  display: block;
-  text-decoration: none;
-  color: #272727;
-  margin: 0;
-  margin-bottom: 3px;
-}
-
 .topheader__scedule .topheader__heading {
+  text-decoration: none;
   color: #00B007;
 }
 
@@ -80,6 +70,17 @@
 
 .logo__img {
   display: block;
+}
+
+.topheader__heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  text-decoration: none;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 @include breakpoint-down (1024px) {

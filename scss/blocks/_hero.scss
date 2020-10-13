@@ -51,12 +51,30 @@
 }
 
 .hero-btns button {
-  background-color: transparent;
+  background-color: #FFD600;
+  padding: 16px 15px;
+  border-radius: 5px;
+}
+
+.hero-btns .next {
+  margin-left: 7px;
+}
+
+.hero-btns button {
+  // background-color: transparent;
   border: none;
   display: block;
   outline: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+.hero-btns button img {
+  display: block;
+}
+
+.carousel .section__text {
+  font-weight: 400;
 }
 
 @include breakpoint-down (1070px) {
