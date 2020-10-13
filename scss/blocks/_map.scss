@@ -1,0 +1,53 @@
+.map .container--wide {
+  flex-direction: column;
+  padding-right: 0;
+}
+
+.location img {
+  flex-shrink: 0;
+}
+
+.map .section__content { 
+  margin-bottom: 50px;
+}
+
+.services.map {
+  padding-bottom: 0;
+}
+
+@include breakpoint-up (860px) {
+  .map form {
+    position: absolute;
+    z-index: 200;
+    top: 40%;
+    left: 3%;
+  }
+
+  .map {
+    margin-top: -30px;
+  }
+
+  .map .container--wide {
+    position: relative;
+  }
+
+}
+
+@include breakpoint-down (885px) {
+  .map .main-form {
+    margin-top: 0px;
+  }
+
+  .map .section__content {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+
+@include breakpoint-down (655px) {
+  .location img {
+    object-fit: cover;
+    object-position: right center;
+  }
+}
+

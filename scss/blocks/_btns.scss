@@ -30,3 +30,25 @@
 .hero-btns button:active , .btn--primary:active{
   opacity: 0.6;
 }
+
+.btn--light {
+  background-color: #fff;
+  border: 1px solid #0055B8;
+  color: #0055B8;
+  text-align: center;
+  padding: 20px 70px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--light:hover {
+  background-color: #0055B8;
+  color: #fff;
+}
+
+.btn--light:active {
+  opacity: 0.6;
+}

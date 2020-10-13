@@ -469,6 +469,32 @@ img {
   opacity: 0.6;
 }
 
+.btn--light {
+  background-color: #fff;
+  border: 1px solid #0055B8;
+  color: #0055B8;
+  text-align: center;
+  padding: 20px 70px;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn--light:hover {
+  background-color: #0055B8;
+  color: #fff;
+}
+
+.btn--light:active {
+  opacity: 0.6;
+}
+
 .siteheader {
   position: fixed;
   top: 0;
@@ -1592,5 +1618,177 @@ input.btn--secondary:active {
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.section-quality .container--wide {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-right: 0;
+}
+
+.section-quality .child-section__content {
+  padding-right: 60px;
+}
+
+.child-section__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.child-section__content {
+  background-image: url("../img/bg-logo.png");
+  background-repeat: no-repeat;
+  background-position: right 50px top 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.child-section__action a {
+  display: block;
+  text-align: center;
+  padding: 25px 80px;
+  margin-left: 35px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.child-section__content h3 {
+  max-width: 100%;
+  background-image: none;
+}
+
+.child-section__content h3::before {
+  margin-left: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-quality .container--wide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-quality .img-child {
+    max-height: 470px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .child-section__action {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20px;
+  }
+  .section-quality .child-section__content {
+    padding-right: 30px;
+  }
+  .section-quality .child-section__content p {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .child-section__action a {
+    padding: 20px 40px;
+  }
+}
+
+.team-info p:nth-child(2) {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #4D4D4D;
+}
+
+.patients .team-list {
+  overflow: auto;
+  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.patients .slider-wrapper {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.patients .team-list li {
+  max-width: 400px;
+}
+
+.patients .section__text {
+  max-width: 483px;
+}
+
+@media only screen and (max-width: 420px) {
+  .patients .team-list {
+    padding-left: 20px;
+  }
+}
+
+.map .container--wide {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 0;
+}
+
+.location img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.map .section__content {
+  margin-bottom: 50px;
+}
+
+.services.map {
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 860px) {
+  .map form {
+    position: absolute;
+    z-index: 200;
+    top: 40%;
+    left: 3%;
+  }
+  .map {
+    margin-top: -30px;
+  }
+  .map .container--wide {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .map .main-form {
+    margin-top: 0px;
+  }
+  .map .section__content {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .location img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right center;
+       object-position: right center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

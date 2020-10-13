@@ -1,0 +1,30 @@
+.team-info p:nth-child(2) {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #4D4D4D;
+}
+
+.patients .team-list {
+  overflow: auto;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.patients .slider-wrapper {
+  overflow: auto;
+  max-width: 100%;
+}
+
+.patients .team-list li {
+  max-width: 400px;
+}
+
+.patients .section__text {
+  max-width: 483px;
+}
+
+@include breakpoint-down (420px) {
+  .patients .team-list {
+    padding-left: 20px;
+  }
+}
