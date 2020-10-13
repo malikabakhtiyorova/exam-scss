@@ -233,5 +233,37 @@
   }
 }
 
+@include breakpoint-down (840px) {
+  .sitenav--nojs {
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 10%;
+  }
+}
+
+@include breakpoint-down (715px) {
+  .sitenav--nojs {
+    display: flex;
+    flex-direction: row;
+    left: 30%;
+  }
+
+  .sitenav--nojs .sitenav__list {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+}
+
+@include breakpoint-down (630px) {
+  .sitenav--nojs {
+    left: 35%;
+  }
+  .sitenav--nojs .sitenav__list {
+    max-width: 250px;
+    flex-wrap: wrap;
+  }
+}
+
 
 
